@@ -9,6 +9,14 @@ public class programaPrincipal {
 	    cc.deposito (200.00);
 	    
 	    cc.extrato ();
+	    
+	    cc.saqueConta(501.00);
+	    
+	    cc.extrato ();
+	    
+	    cc.saqueConta(150.00);
+	    
+	    cc.extrato ();
 	}
 
 }

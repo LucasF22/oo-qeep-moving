@@ -1,9 +1,9 @@
 package br.com.conta;
 
 public class contaBancaria {
- int numero;
- double saldo;
- String nomeCompleto;
+ private int numero;
+ private double saldo;
+ private String nomeCompleto;
  
  //Construtor:
  public contaBancaria (int numero, double saldo, String nomeCompleto) {
@@ -12,7 +12,8 @@ public class contaBancaria {
 	this.nomeCompleto = nomeCompleto;
  };
  //metodos
- public boolean saqueConta(float valor) {
+ 
+ public boolean saqueConta(double valor) {
 	 if (this.saldo >= valor && valor > 0){
 		 this.saldo -= valor;
 		 return true;

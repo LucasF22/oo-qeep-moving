@@ -2,10 +2,10 @@ package br.com.elevador;
 
 public class Elevador {
 	//Atributos
-	int andarAtual;
-	int andarTotal;
-	int capacidade;
-	int qtdAtual;
+	private int andarAtual;
+	private int andarTotal;
+	private int capacidade;
+	private int qtdAtual;
 	
 	//construtor
 	public Elevador(int andarTotal, int capacidade){
@@ -17,13 +17,13 @@ public class Elevador {
 	
 	//Métodos
 	
+	
 
 	public void entra() {
 		if (qtdAtual < capacidade) {
 			qtdAtual++;
 		}
 	}
-	
 	public void sai() {
 		if (qtdAtual > 0) {
 			qtdAtual--;
@@ -43,10 +43,33 @@ public class Elevador {
 	}
 	
 	public void status() {
-		System.out.println("==========");
+		System.out.println("=============================");
 		System.out.printf("\nO elevador está no andar: %d\n", this.andarAtual);
 		System.out.printf("\n Há %d pessoas no elevador.\n", this.qtdAtual);
-		System.out.println("==========");
+		System.out.println("=============================");
 	}
 	
+	public int getAndarTotal() {
+		return andarTotal;
+	}
+
+	public void setAndarTotal(int andarTotal) {
+		this.andarTotal = andarTotal;
+	}
+
+	public int getCapacidade() {
+		return capacidade;
+	}
+
+	public void setCapacidade(int capacidade) {
+		this.capacidade = capacidade;
+	}
+
+	public int getAndarAtual() {
+		return andarAtual;
+	}
+
+	public int getQtdAtual() {
+		return qtdAtual;
+	}
 }
